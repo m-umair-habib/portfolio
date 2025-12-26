@@ -3,96 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Umair | Data Scientist & Machine Learning Engineer</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Muhammad Umair | ML Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <div class="sidebar-top">
-                <img src="assets/images/profile.jpg" alt="Muhammad Umair" class="profile-pic">
-                <h1 class="name">Muhammad Umair</h1>
-                <div class="badge">Machine Learning Learner</div>
-                <p class="bio">Turning complex data into actionable insights through Machine Learning and Data Science.</p>
-            </div>
+    <div class="background-animate"></div>
+    
+    <main class="viewport-wrapper">
+        <div class="glass-card">
+            <header class="hero-header">
+                <div class="profile-area">
+                    <img src="assets/images/profile.jpg" alt="Umair" class="main-profile-pic">
+                    <div class="hero-text">
+                        <h1>Muhammad <span class="accent">Umair</span></h1>
+                        <p class="typewriter">Machine Learning & Data Science Learner</p>
+                    </div>
+                </div>
+                <div class="top-socials">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </header>
 
-            <nav class="sidebar-nav">
-                <a href="#projects"><i class="fas fa-code"></i> Projects</a>
-                <a href="#about"><i class="fas fa-user"></i> About</a>
-                <a href="#resume"><i class="fas fa-file-alt"></i> Resume</a>
-                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-            </nav>
+            <div class="content-grid">
+                <div class="info-col">
+                    <div class="info-box">
+                        <h3><i class="fas fa-user-circle"></i> About Me</h3>
+                        <p>I transform complex data into actionable insights using ML pipelines. Passionate about solving real-world problems with AI.</p>
+                    </div>
+                    <div class="skills-box">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Scikit-Learn</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
 
-            <div class="social-icons">
-                <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank" title="Scholar"><i class="fas fa-graduation-cap"></i></a>
-            </div>
-        </aside>
-
-        <main class="main-content">
-            <section id="projects">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card" data-aos="fade-up">
-                        <div class="project-img-container">
-                            <img src="assets/images/project1.png" alt="Sales Prediction" class="project-img">
-                        </div>
-                        <div class="project-info">
-                            <h3>Predictive Sales Modeling</h3>
-                            <p>Regression analysis using Python and Scikit-learn to forecast quarterly revenue with 94% accuracy.</p>
-                            <div class="tags">
-                                <span>Python</span><span>Regression</span><span>Pandas</span>
-                            </div>
-                            <a href="#" class="view-link">View Project <i class="fas fa-arrow-right"></i></a>
+                <div class="projects-col">
+                    <h3><i class="fas fa-project-diagram"></i> Featured Projects</h3>
+                    <div class="mini-project">
+                        <div class="p-icon"><i class="fas fa-chart-line"></i></div>
+                        <div>
+                            <h4>Predictive Sales Model</h4>
+                            <a href="#">View Code <i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
-
-                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="project-img-container">
-                            <img src="assets/images/project2.png" alt="Segmentation" class="project-img">
-                        </div>
-                        <div class="project-info">
-                            <h3>Customer Segmentation</h3>
-                            <p>K-Means clustering implementation to identify high-value customer segments for marketing optimization.</p>
-                            <div class="tags">
-                                <span>Clustering</span><span>Scikit-learn</span><span>Analysis</span>
-                            </div>
-                            <a href="#" class="view-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    <div class="mini-project">
+                        <div class="p-icon"><i class="fas fa-users-cog"></i></div>
+                        <div>
+                            <h4>Customer Segmentation</h4>
+                            <a href="#">View Code <i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <section id="about" class="glass-section" data-aos="fade-up">
-                <h2 class="section-title">About Me</h2>
-                <p>I am a Data Science enthusiast dedicated to solving real-world problems using mathematical models and computational intelligence. My expertise lies in Python-based data manipulation and building scalable machine learning pipelines.</p>
-            </section>
-
-            <div class="dual-section">
-                <section id="resume" class="glass-section" data-aos="fade-up">
-                    <h2 class="section-title">Resume</h2>
-                    <p>Interested in a more detailed look at my experience?</p>
-                    <a href="resume.pdf" download class="btn-primary">Download PDF</a>
-                </section>
-
-                <section id="contact" class="glass-section" data-aos="fade-up">
-                    <h2 class="section-title">Get In Touch</h2>
-                    <p>Let's collaborate on your next data project.</p>
-                    <div class="contact-links">
-                        <a href="mailto:email@example.com"><i class="fas fa-envelope"></i> Email</a>
-                        <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <div class="action-col">
+                    <div class="cta-card">
+                        <p>Ready to collaborate?</p>
+                        <a href="mailto:email@example.com" class="btn-main">Get In Touch</a>
+                        <a href="resume.pdf" class="btn-outline">Download CV</a>
                     </div>
-                </section>
+                </div>
             </div>
-        </main>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>AOS.init({ duration: 800, once: true });</script>
+        </div>
+    </main>
 </body>
 </html>
