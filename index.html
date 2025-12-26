@@ -3,106 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Umair | Data Scientist</title>
+    <title>Muhammad Umair | Data Scientist & Machine Learning Engineer</title>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- AOS Animation -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <img src="assets/images/profile.jpg" alt="Muhammad Umair" class="profile-pic">
-            <h1>Muhammad Umair</h1>
-            <h3>LEARNER</h3>
-            <p>Passionate about Machine Learning and Data Science, building real-world projects and solving challenging problems.</p>
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <img src="assets/images/profile.jpg" alt="Muhammad Umair" class="profile-pic">
+                <h1 class="name">Muhammad Umair</h1>
+                <div class="badge">Machine Learning Learner</div>
+                <p class="bio">Turning complex data into actionable insights through Machine Learning and Data Science.</p>
+            </div>
 
-            <!-- Navigation -->
             <nav class="sidebar-nav">
-                <a href="#projects">Projects</a>
-                <a href="#about">About</a>
-                <a href="#resume">Resume</a>
-                <a href="#contact">Contact</a>
-                <a href="#blog">Blog</a>
+                <a href="#projects"><i class="fas fa-code"></i> Projects</a>
+                <a href="#about"><i class="fas fa-user"></i> About</a>
+                <a href="#resume"><i class="fas fa-file-alt"></i> Resume</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
             </nav>
 
-            <!-- Social Media Icons -->
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                <a href="https://www.instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://discord.gg/yourusername" target="_blank"><i class="fab fa-discord"></i></a>
-                <a href="https://www.reddit.com/user/yourusername" target="_blank"><i class="fab fa-reddit"></i></a>
-                <!-- Future academic links -->
-                <a href="#" target="_blank" id="google-scholar"><i class="fas fa-graduation-cap"></i></a>
-                <a href="#" target="_blank" id="research-gate"><i class="fas fa-flask"></i></a>
+                <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" title="Scholar"><i class="fas fa-graduation-cap"></i></a>
             </div>
-        </div>
+        </aside>
 
-        <!-- Main Content -->
-        <div class="main-content">
-            <!-- Projects Section -->
+        <main class="main-content">
             <section id="projects">
-                <h2>Projects</h2>
+                <h2 class="section-title">Featured Projects</h2>
                 <div class="projects-grid">
-                    <!-- Example Project 1 -->
                     <div class="project-card" data-aos="fade-up">
-                        <img src="assets/images/project1.png" alt="Project 1 Screenshot" class="project-img">
-                        <h3>Predictive Model for Sales</h3>
-                        <p>Built a regression model to predict sales using Python, Pandas, and Scikit-learn.</p>
-                        <a href="https://github.com/yourusername/project1" target="_blank">View Code</a>
+                        <div class="project-img-container">
+                            <img src="assets/images/project1.png" alt="Sales Prediction" class="project-img">
+                        </div>
+                        <div class="project-info">
+                            <h3>Predictive Sales Modeling</h3>
+                            <p>Regression analysis using Python and Scikit-learn to forecast quarterly revenue with 94% accuracy.</p>
+                            <div class="tags">
+                                <span>Python</span><span>Regression</span><span>Pandas</span>
+                            </div>
+                            <a href="#" class="view-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
-                    <!-- Example Project 2 -->
-                    <div class="project-card" data-aos="fade-up">
-                        <img src="assets/images/project2.png" alt="Project 2 Screenshot" class="project-img">
-                        <h3>Customer Segmentation</h3>
-                        <p>Performed clustering on customer data to identify distinct segments for targeted marketing.</p>
-                        <a href="https://github.com/yourusername/project2" target="_blank">View Code</a>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-img-container">
+                            <img src="assets/images/project2.png" alt="Segmentation" class="project-img">
+                        </div>
+                        <div class="project-info">
+                            <h3>Customer Segmentation</h3>
+                            <p>K-Means clustering implementation to identify high-value customer segments for marketing optimization.</p>
+                            <div class="tags">
+                                <span>Clustering</span><span>Scikit-learn</span><span>Analysis</span>
+                            </div>
+                            <a href="#" class="view-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- About Section -->
-            <section id="about" data-aos="fade-up">
-                <h2>About Me</h2>
-                <p>Passionate about Machine Learning and Data Science. Skilled in Python, Pandas, Scikit-learn, and deep learning. Always learning and building projects to solve real-world problems.</p>
+            <section id="about" class="glass-section" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <p>I am a Data Science enthusiast dedicated to solving real-world problems using mathematical models and computational intelligence. My expertise lies in Python-based data manipulation and building scalable machine learning pipelines.</p>
             </section>
 
-            <!-- Resume Section -->
-            <section id="resume" data-aos="fade-up">
-                <h2>Resume</h2>
-                <a href="resume.pdf" download class="btn">Download Resume</a>
-            </section>
+            <div class="dual-section">
+                <section id="resume" class="glass-section" data-aos="fade-up">
+                    <h2 class="section-title">Resume</h2>
+                    <p>Interested in a more detailed look at my experience?</p>
+                    <a href="resume.pdf" download class="btn-primary">Download PDF</a>
+                </section>
 
-            <!-- Contact Section -->
-            <section id="contact" data-aos="fade-up">
-                <h2>Contact</h2>
-                <p>Email: <a href="mailto:your_email@example.com">your_email@example.com</a></p>
-                <p>WhatsApp: <a href="https://wa.me/YourNumber" target="_blank">Chat on WhatsApp</a></p>
-            </section>
-
-            <!-- Blog Section -->
-            <section id="blog" data-aos="fade-up">
-                <h2>Blog</h2>
-                <p>Coming soon...</p>
-            </section>
-        </div>
+                <section id="contact" class="glass-section" data-aos="fade-up">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p>Let's collaborate on your next data project.</p>
+                    <div class="contact-links">
+                        <a href="mailto:email@example.com"><i class="fas fa-envelope"></i> Email</a>
+                        <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </section>
+            </div>
+        </main>
     </div>
 
-    <!-- AOS Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-      AOS.init({ duration: 1000 });
-    </script>
+    <script>AOS.init({ duration: 800, once: true });</script>
 </body>
 </html>
