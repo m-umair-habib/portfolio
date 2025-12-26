@@ -1,3 +1,4 @@
+/* General */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -25,7 +26,7 @@ body {
 
 .sidebar h1 {
     margin: 10px 0 5px;
-    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .sidebar h3 {
@@ -39,16 +40,43 @@ body {
     margin-bottom: 20px;
 }
 
-.social-icons a {
-    display: inline-block;
-    margin: 5px;
-    text-decoration: none;
+/* Sidebar Navigation */
+.sidebar-nav {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-nav a {
     color: #fff;
+    text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+.sidebar-nav a:hover {
+    color: #ffcc00;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .social-icons a:hover {
     color: #ffcc00;
+    transform: translateY(-3px);
 }
 
 /* Main Content */
@@ -56,7 +84,6 @@ body {
     flex: 1;
     padding: 40px;
 }
-
 
 .main-content section {
     margin-bottom: 50px;
@@ -68,58 +95,7 @@ body {
     color: #1e1e1e;
 }
 
-.projects-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.project-card {
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 8px;
-    width: 250px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.project-card h3 {
-    margin-top: 0;
-}
-
-.project-card a {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #1e1e1e;
-    font-weight: bold;
-}
-
-.project-card a:hover {
-    color: #ffcc00;
-}
-
-#resume .btn {
-    display: inline-block;
-    background-color: #1e1e1e;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-#resume .btn:hover {
-    background-color: #ffcc00;
-    color: #1e1e1e;
-}
-
-.project-img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
+/* Project Cards */
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
@@ -140,8 +116,12 @@ body {
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
-.project-card h3 {
-    margin-top: 0;
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .project-card a {
@@ -156,7 +136,7 @@ body {
     color: #ffcc00;
 }
 
-
+/* About Section */
 #about {
     background-color: #ffffff;
     padding: 30px;
@@ -170,7 +150,7 @@ body {
     color: #333;
 }
 
-
+/* Resume Section */
 #resume {
     background-color: #f5f5f5;
     padding: 30px;
@@ -194,7 +174,7 @@ body {
     color: #1e1e1e;
 }
 
-
+/* Contact Section */
 #contact {
     background-color: #ffffff;
     padding: 30px;
@@ -212,7 +192,7 @@ body {
     color: #ffcc00;
 }
 
-
+/* Blog Section */
 #blog {
     background-color: #f5f5f5;
     padding: 30px;
@@ -222,106 +202,35 @@ body {
     color: #666;
 }
 
-
-.main-content section {
-    margin-bottom: 50px;
-}
-
-.main-content h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #1e1e1e;
-}
-
-/* Mobile & Tablet Responsive */
+/* Responsive */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Stack sidebar on top of main content */
+        flex-direction: column;
     }
-
     .sidebar {
         width: 100%;
         text-align: center;
         padding: 20px 0;
     }
-
     .main-content {
         padding: 20px;
     }
-
     .projects-grid {
-        flex-direction: column; /* Project cards stack vertically */
+        flex-direction: column;
         align-items: center;
     }
-
     .project-card {
-        width: 90%; /* Cards take most of the screen */
+        width: 90%;
+    }
+    .profile-pic {
+        width: 120px;
+    }
+    .main-content p {
+        font-size: 15px;
     }
 }
 
-
-.profile-pic {
-    width: 120px; /* smaller on mobile */
-}
-
-.project-img {
-    height: auto; /* maintain aspect ratio */
-}
-
-.main-content p {
-    font-size: 15px; /* slightly smaller text on mobile */
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.social-icons a {
-    color: #fff;
-    font-size: 20px;
-    transition: color 0.3s, transform 0.3s;
-}
-
-.social-icons a:hover {
-    color: #ffcc00;
-    transform: translateY(-3px);
-}
-
-
-.social-icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-
-.sidebar-nav {
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.sidebar-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.sidebar-nav a:hover {
-    color: #ffcc00;
-}
-
+/* Smooth scroll */
 html {
     scroll-behavior: smooth;
 }
