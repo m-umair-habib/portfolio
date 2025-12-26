@@ -155,3 +155,80 @@ body {
 .project-card a:hover {
     color: #ffcc00;
 }
+
+
+#about {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+#resume {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#resume .btn {
+    display: inline-block;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#resume .btn:hover {
+    background-color: #ffcc00;
+    color: #1e1e1e;
+}
+
+
+#contact {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#contact a {
+    color: #1e1e1e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #ffcc00;
+}
+
+
+#blog {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    font-style: italic;
+    color: #666;
+}
+
+
+.main-content section {
+    margin-bottom: 50px;
+}
+
+.main-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #1e1e1e;
+}
