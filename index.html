@@ -9,66 +9,61 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="background-animate"></div>
+    <div class="bg-glow"></div>
     
-    <main class="viewport-wrapper">
-        <div class="glass-card">
-            <header class="hero-header">
-                <div class="profile-area">
-                    <img src="assets/images/profile.jpg" alt="Umair" class="main-profile-pic">
-                    <div class="hero-text">
-                        <h1>Muhammad <span class="accent">Umair</span></h1>
-                        <p class="typewriter">Machine Learning & Data Science Learner</p>
+    <main class="viewport-container">
+        <div class="glass-container">
+            
+            <section class="profile-header">
+                <div class="identity">
+                    <img src="assets/images/profile.jpg" alt="Muhammad Umair" class="profile-img">
+                    <div class="titles">
+                        <h1>MUHAMMAD <span class="highlight">UMAIR</span></h1>
+                        <p class="subtitle">Machine Learning & Data Science Learner</p>
                     </div>
                 </div>
-                <div class="top-socials">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#"><i class="fab fa-discord"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                <div class="social-bar">
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
-            </header>
+            </section>
 
-            <div class="content-grid">
-                <div class="info-col">
-                    <div class="info-box">
-                        <h3><i class="fas fa-user-circle"></i> About Me</h3>
-                        <p>I transform complex data into actionable insights using ML pipelines. Passionate about solving real-world problems with AI.</p>
-                    </div>
-                    <div class="skills-box">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Scikit-Learn</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">SQL</span>
+            <div class="main-grid">
+                
+                <div class="grid-card">
+                    <h3><i class="fas fa-fingerprint"></i> About Me</h3>
+                    <p>Focused on building intelligent systems. I specialize in Python-based ML pipelines, data cleaning, and predictive analytics to solve complex real-world challenges.</p>
+                    <div class="skill-pills">
+                        <span>Python</span><span>Scikit-Learn</span><span>Pandas</span><span>SQL</span>
                     </div>
                 </div>
 
-                <div class="projects-col">
-                    <h3><i class="fas fa-project-diagram"></i> Featured Projects</h3>
-                    <div class="mini-project">
-                        <div class="p-icon"><i class="fas fa-chart-line"></i></div>
-                        <div>
-                            <h4>Predictive Sales Model</h4>
-                            <a href="#">View Code <i class="fas fa-external-link-alt"></i></a>
+                <div class="grid-card">
+                    <h3><i class="fas fa-rocket"></i> Key Projects</h3>
+                    <div class="project-item">
+                        <div class="p-info">
+                            <h4>Sales Prediction Model</h4>
+                            <a href="#">Source Code <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    <div class="mini-project">
-                        <div class="p-icon"><i class="fas fa-users-cog"></i></div>
-                        <div>
+                    <div class="project-item">
+                        <div class="p-info">
                             <h4>Customer Segmentation</h4>
-                            <a href="#">View Code <i class="fas fa-external-link-alt"></i></a>
+                            <a href="#">Source Code <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="action-col">
-                    <div class="cta-card">
-                        <p>Ready to collaborate?</p>
-                        <a href="mailto:email@example.com" class="btn-main">Get In Touch</a>
-                        <a href="resume.pdf" class="btn-outline">Download CV</a>
-                    </div>
+                <div class="grid-card cta-card">
+                    <h3><i class="fas fa-paper-plane"></i> Contact</h3>
+                    <p>Available for collaborative data projects.</p>
+                    <a href="mailto:your_email@example.com" class="btn-primary">Email Me</a>
+                    <a href="resume.pdf" class="btn-secondary">Download CV</a>
                 </div>
+
             </div>
         </div>
     </main>
