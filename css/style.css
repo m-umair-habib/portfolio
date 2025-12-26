@@ -232,3 +232,46 @@ body {
     margin-bottom: 20px;
     color: #1e1e1e;
 }
+
+/* Mobile & Tablet Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack sidebar on top of main content */
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .projects-grid {
+        flex-direction: column; /* Project cards stack vertically */
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%; /* Cards take most of the screen */
+    }
+}
+
+
+.profile-pic {
+    width: 120px; /* smaller on mobile */
+}
+
+.project-img {
+    height: auto; /* maintain aspect ratio */
+}
+
+.main-content p {
+    font-size: 15px; /* slightly smaller text on mobile */
+}
+
+html {
+    scroll-behavior: smooth;
+}
