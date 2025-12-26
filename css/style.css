@@ -56,3 +56,58 @@ body {
     flex: 1;
     padding: 40px;
 }
+
+
+.main-content section {
+    margin-bottom: 50px;
+}
+
+.main-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #1e1e1e;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #1e1e1e;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    color: #ffcc00;
+}
+
+#resume .btn {
+    display: inline-block;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#resume .btn:hover {
+    background-color: #ffcc00;
+    color: #1e1e1e;
+}
