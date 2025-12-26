@@ -302,3 +302,26 @@ html {
     align-items: center;
     gap: 10px;
 }
+
+
+.sidebar-nav {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.sidebar-nav a:hover {
+    color: #ffcc00;
+}
+
+html {
+    scroll-behavior: smooth;
+}
