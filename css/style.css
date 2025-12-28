@@ -1,6 +1,6 @@
 :root {
-    --primary: #00d2ff;
-    --bg-dark: #050a10;
+    --primary: hsl(191, 100%, 50%);
+    --bg-light: #ffffff;
     --sidebar-bg: #0a1118;
     --text-main: #f1f5f9;
     --text-dim: #94a3b8;
@@ -13,7 +13,7 @@ html, body {
     height: 100vh;
     width: 100vw;
     overflow: hidden; /* This removes the scrollbar */
-    background-color: var(--bg-dark);
+    background-color: var(--bg-light);
     font-family: 'Inter', sans-serif;
 }
 
@@ -149,7 +149,7 @@ h2 {
 .btn {
     display: inline-block;
     background: var(--primary);
-    color: var(--bg-dark);
+    color: var(--bg-light);
     padding: 10px 25px;
     text-decoration: none;
     border-radius: 8px;
